@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.online.dreams_map">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name="com.online.dreams_map.Activities.Input.ComboBoxUL"
+            android:label="@string/title_activity_combobox_ul"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+        <activity
+            android:name="com.online.dreams_map.Activities.Blog.BlogLib"
+            android:label="@string/title_activity_bloglib"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.online.dreams_map.Activities.Blog.ActivitySearch"
+            android:label="@string/title_activity_searchNotes"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.online.dreams_map.Activities.ViewNote.ActivityViewNote"
+            android:label="@string/title_activity_viewNote"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" android:host="dreams.online-we.ru" android:pathPrefix="/blog" />
+                <data android:scheme="https" android:host="dreams.online-we.ru" android:pathPrefix="/blog" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.online.dreams_map.Activities.DreamsLib.ActivityLib"
+            android:label="@string/title_activity_dreamslib"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.online.dreams_map.Activities.DreamsLib.ActivitySearch"
+            android:label="@string/title_activity_searchDreams"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+        <activity
+            android:name="com.online.dreams_map.Activities.EditDream.EditDreamActivity"
+            android:label="@string/title_activity_edit_dream"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.online.dreams_map.Activities.ViewDream.ActivityViewDream"
+            android:label="@string/title_activity_view_dream"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" android:host="dreams.online-we.ru" android:pathPrefix="/dreams" />
+                <data android:scheme="https" android:host="dreams.online-we.ru" android:pathPrefix="/dreams" />
+                <data android:scheme="http" android:host="dreams.online-we.ru" android:pathPrefix="/all-dreams" />
+                <data android:scheme="https" android:host="dreams.online-we.ru" android:pathPrefix="/all-dreams" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.online.dreams_map.Activities.ViewDreamMap.ActivityViewMap"
+            android:label="@string/title_activity_view_dream_map"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+        <activity
+            android:name="com.online.dreams_map.Activities.Auth.ActivitySelectAuth"
+            android:label="Выберите аккаунт"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.online.dreams_map.Activities.Auth.ActivityVKLogin"
+            android:label="Авторизация ВКонтакте"
+            android:noHistory="false"
+            android:parentActivityName="com.online.dreams_map.Activities.Auth.ActivityLoginForm"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.online.dreams_map.Activities.Auth.ActivityLoginForm"
+            android:label="Вход в приложение"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+
+        <activity
+            android:name="com.online.dreams_map.Activities.StartSlides.FourthSlideShow"
+            android:label="Слайд 4"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.online.dreams_map.Activities.StartSlides.ThridSlideShow"
+            android:label="Слайд 3"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.online.dreams_map.Activities.StartSlides.SecondSlideShow"
+            android:label="Слайд 2"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.online.dreams_map.Activities.StartSlides.FirstSlideShow"
+            android:label="Слайд 1"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+        <activity
+            android:name="com.online.dreams_map.StartApp"
+            android:label="Дневник сновидений"
+            android:noHistory="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

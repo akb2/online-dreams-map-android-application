@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <style name="ThemeToolbar.NavigationView" parent="AppTheme">
+        <item name="android:listDivider">@color/navBarDividerColor</item>
+        <item name="android:textColorSecondary">@color/navBarTitleColor</item>
+    </style>
+
+
+
+
+
+    <style name="baseLinearLayoutHOR" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="baseLinearLayoutVER" parent="baseLinearLayoutHOR">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="hiddenBlock" parent="baseLinearLayoutHOR">
+        <item name="android:visibility">gone</item>
+    </style>
+
+
+
+
+
+    <style name="Header" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+
+    <style name="Content" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#EEEEEE</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="SlideIcon" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+    </style>
+
+
+
+
+
+    <style name="TextInput" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#555555</item>
+        <item name="android:textColorHighlight">#555555</item>
+        <item name="android:background">#DDDDDD</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingLeft">30dp</item>
+    </style>
+
+
+
+
+
+    <style name="MainButton" parent="AppTheme">
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#4C6AAA</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MainButtonBack" parent="AppTheme">
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#011950</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ContentButton" parent="AppTheme">
+        <item name="android:layout_weight">0</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/content_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+
+
+    <style name="bottomButtonMenu" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+
+
+
+
+    <style name="NoticeText" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:alpha">0</item>
+        <item name="android:background">@color/noticeColorError</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+
+
+
+
+    <style name="SlideMainLayout" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#011950</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="SlideLayoutContent" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="SlideLayoutNotice" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="SlideLayoutButton" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">bottom|right</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+
+
+
+    <style name="toolBarTitle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:splitMotionEvents">true</item>
+    </style>
+
+
+    <style name="colapsToolbarTitleMax" parent="AppTheme">
+        <item name="android:textSize">28dp</item>
+        <item name="android:textColor">@color/toolbarColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="colapsToolbarTitleMin" parent="AppTheme">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/toolbarColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="colapsToolbarSubTitleMax" parent="AppTheme">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/toolbarSubColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="colapsToolbarSubTitleMin" parent="AppTheme">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/toolbarSubColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+
+
+    <style name="formContainer" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingBottom">30dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="formGroup" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+    <style name="formGroupTitle" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/textColorSubTitle</item>
+    </style>
+
+    <style name="formGroupTextInput" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorMain</item>
+        <item name="android:textColorHint">@color/textColorMainHint</item>
+        <item name="android:textColorHighlight">@color/textBackgroundMainHighLight</item>
+        <item name="android:background">@color/textBackgroundMain</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+
+
+
+
+    <style name="formGroupComboBox" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/textBackgroundMain</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="formGroupComboBoxInput" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorMain</item>
+        <item name="android:textColorHint">@color/textColorMainHint</item>
+        <item name="android:textColorHighlight">@color/textBackgroundMainHighLight</item>
+        <item name="android:background">@color/textBackgroundMain</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="formGroupComboBoxButton" parent="AppTheme">
+        <item name="android:layout_width">@dimen/quad_button_size</item>
+        <item name="android:layout_height">@dimen/quad_button_size</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="formGroupComboBoxImage" parent="AppTheme">
+        <item name="android:layout_width">@dimen/quad_button_size</item>
+        <item name="android:layout_height">@dimen/quad_button_size</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/textBackgroundMain</item>
+    </style>
+
+    <style name="formGroupComboBoxElm" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/textColorMainHighLight</item>
+    </style>
+
+    <style name="formGroupComboBoxElmImage" parent="AppTheme">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="formGroupComboBoxElmInput" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorMain</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+
+
+
+
+    <style name="formGroupListBox" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/textBackgroundMain</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="formGroupListBoxInput" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorMain</item>
+        <item name="android:textColorHint">@color/textColorMainHint</item>
+        <item name="android:textColorHighlight">@color/textBackgroundMainHighLight</item>
+        <item name="android:background">@color/textBackgroundMain</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="formGroupListBoxButton" parent="AppTheme">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="formGroupListBoxElmsArea" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">13dp</item>
+    </style>
+
+    <style name="formGroupListBoxElm" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="formGroupListBoxElmHelper" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/textBackgroundListBoxElm</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">13dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="formGroupListBoxElmValue" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorMain</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="formGroupListBoxElmButton" parent="AppTheme">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">13dp</item>
+    </style>
+
+
+
+
+
+    <style name="forMainContent" parent="AppTheme">
+        <item name="android:background">#dddddd</item>
+    </style>
+
+    <style name="mainContent" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">#dddddd</item>
+    </style>
+
+    <style name="mainContent_2" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#dddddd</item>
+    </style>
+
+
+
+
+
+    <style name="progressBar">
+        <item name="colorAccent">@color/mainLoaderProgress</item> <!-- Whatever color you want-->
+    </style>
+
+
+
+</resources>

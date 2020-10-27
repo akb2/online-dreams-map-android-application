@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="noteLibCardViewContentGroup" parent="baseLinearLayoutVER">
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/notesLibCardView_padding</item>
+        <item name="android:paddingRight">@dimen/notesLibCardView_padding</item>
+        <item name="android:paddingBottom">@dimen/notesLibCardView_padding</item>
+        <item name="android:paddingLeft">@dimen/notesLibCardView_padding</item>
+    </style>
+
+    <style name="noteLibCardViewCategoryGroup" parent="baseLinearLayoutHOR">
+        <item name="android:layout_marginTop">@dimen/notesLibCardView_innerMarginBig</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">@dimen/notesLibCardView_padding</item>
+        <item name="android:paddingBottom">@dimen/notesLibCardView_padding</item>
+        <item name="android:paddingLeft">@dimen/notesLibCardView_padding</item>
+    </style>
+
+
+
+
+
+    <style name="noteLibCardViewImageFrame" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/notesLibCardView_imageHeight</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="noteLibCardViewImageTextLayout" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">left|bottom</item>
+        <item name="android:padding">@dimen/notesLibCardView_padding</item>
+        <item name="android:background">@color/notesLibCardView_imageTextBackground</item>
+    </style>
+
+    <style name="noteLibCardViewImage" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/notesLibCardView_imageHeight</item>
+        <item name="android:layout_gravity">center_horizontal|top</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:background">@color/notesLibCardView_imageBackground</item>
+    </style>
+
+
+
+
+
+    <style name="noteLibCardViewTitle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/notesLibCardView_title_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/notesLibCardView_titleColor</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="noteLibCardViewTitleImage" parent="noteLibCardViewTitle">
+        <item name="android:textColor">@color/notesLibCardView_titleColorImage</item>
+    </style>
+
+    <style name="noteLibCardViewSubTitle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/notesLibCardView_subtitle_size</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/notesLibCardView_subTitleColor</item>
+        <item name="android:layout_marginBottom">@dimen/notesLibCardView_innerMarginBig</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="noteLibCardViewSubTitleImage" parent="noteLibCardViewSubTitle">
+        <item name="android:textColor">@color/notesLibCardView_subTitleColorImage</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="noteLibCardViewDescription" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/notesLibCardView_description_size</item>
+        <item name="android:textColor">@color/notesLibCardView_description</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="noteLibCardViewKeywordsArea" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/notesLibCardView_innerMargin</item>
+    </style>
+
+
+
+
+
+    <style name="noteLibCardViewHR" parent="baseLinearLayoutHOR">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:background">@color/notesLibCardViewHR</item>
+    </style>
+
+    <style name="noteLibCardViewButton" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/dreamslib_cardview_button</item>
+        <item name="android:background">@drawable/dreamslib_cardview_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTitleMainView"
+    tools:context="com.online.dreams_map.Activities.EditDream.EditDreamActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    style="AppTheme3"
+    android:orientation="vertical"
+    app:statusBarScrim="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroundMainView">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/toolBarTitle"
+            android:background="@color/colorTitleMainView"
+            android:fitsSystemWindows="true"
+            app:title="Новый сон" />
+
+        <com.online.dreams_map.SysLibs.VScroll
+            android:id="@+id/verticalScroll"
+            style="@style/formContainer"
+            android:padding="0dp"
+            android:layout_marginTop="60dp">
+
+            <LinearLayout
+                android:id="@+id/combobox_lib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </com.online.dreams_map.SysLibs.VScroll>
+
+    </FrameLayout>
+
+</FrameLayout>

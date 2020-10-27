@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.apmem.tools.layouts.FlowLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/listbox_elmsarea"
+    style="@style/formGroupListBoxElmsArea">
+
+    <TextView
+        android:id="@+id/listbox_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите значение и нажмите кнопку ''плюс''" />
+
+</org.apmem.tools.layouts.FlowLayout>

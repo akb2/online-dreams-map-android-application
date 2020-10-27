@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.online.dreams_map.Activities.Auth.ActivityLoginForm"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    style="AppTheme3"
+    app:statusBarScrim="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroundMainView"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:fitsSystemWindows="true"
+            android:id="@+id/toolbar"
+            style="@style/toolBarTitle"
+            android:background="@color/colorPrimary"
+            app:title="Авторизация" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="top"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/errorMess"
+                        style="@style/NoticeText"
+                        android:layout_gravity="top"
+                        android:text="Уведомление" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp">
+
+                    <ImageView
+                        android:id="@+id/authVKButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/auth_vk" />
+
+                    <EditText
+                        android:id="@+id/login"
+                        style="@style/TextInput"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:hapticFeedbackEnabled="false"
+                        android:hint="Ваш логин или Email"
+                        android:inputType="textEmailAddress" />
+
+                    <EditText
+                        android:id="@+id/pass"
+                        style="@style/TextInput"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:hapticFeedbackEnabled="false"
+                        android:hint="Ваш пароль"
+                        android:inputType="textPassword" />
+
+                    <Button
+                        android:id="@+id/authButton"
+                        style="@style/ContentButton"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="50dp"
+                        android:paddingBottom="10dp"
+                        android:stateListAnimator="@null"
+                        android:text="Вход" />
+
+                    <Button
+                        android:id="@+id/registerButton"
+                        style="@style/MainButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/black_overlay"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="40dp"
+                        android:paddingBottom="10dp"
+                        android:stateListAnimator="@null"
+                        android:text="Регистрация"
+                        android:textColor="@color/primaryColorDark" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/mainLoader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill"
+        android:background="@color/mainLoaderBackground"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:theme="@style/progressBar" />
+
+            <TextView
+                android:id="@+id/mainLoaderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="Пожалуйста подождите"
+                android:textColor="@color/mainLoaderText"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

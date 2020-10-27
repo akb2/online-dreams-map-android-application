@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="whiteProgressBar" parent="AppTheme">
+        <item name="colorAccent">@color/colorDefaultTextDark</item>
+    </style>
+
+
+
+    <style name="progressBarStyleLib" parent="AppTheme">
+        <item name="colorAccent">@color/libLoader</item>
+    </style>
+    <style name="progressBarStyleLib_" parent="AppTheme">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+    </style>
+
+
+</resources>

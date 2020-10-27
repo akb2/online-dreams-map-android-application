@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/forNotesLibBlock"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp">
+
+    <LinearLayout
+        android:id="@+id/cardViewlayout"
+        style="@style/baseLinearLayoutVER" >
+
+        <FrameLayout
+            android:id="@+id/image_frame"
+            style="@style/noteLibCardViewImageFrame" >
+
+            <ImageView
+                android:id="@+id/image"
+                style="@style/noteLibCardViewImage" />
+
+            <LinearLayout
+                style="@style/noteLibCardViewImageTextLayout" >
+
+                <TextView
+                    android:id="@+id/image_title"
+                    style="@style/noteLibCardViewTitleImage"
+                    android:text="@string/notesLibCardView_title_text" />
+
+                <TextView
+                    android:id="@+id/image_date"
+                    style="@style/noteLibCardViewSubTitleImage"
+                    android:text="@string/notesLibCardView_subtitle_text" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            style="@style/noteLibCardViewContentGroup">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/noteLibCardViewTitle"
+                android:text="@string/notesLibCardView_title_text" />
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/noteLibCardViewSubTitle"
+                android:text="@string/notesLibCardView_subtitle_text" />
+
+            <TextView
+                android:id="@+id/content"
+                style="@style/noteLibCardViewDescription"
+                android:text="@string/notesLibCardView_description_text" />
+
+            <org.apmem.tools.layouts.FlowLayout
+                android:id="@+id/keywords"
+                style="@style/noteLibCardViewKeywordsArea" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/noteLibCardViewHR"
+            android:orientation="horizontal"></LinearLayout>
+
+        <Button
+            android:id="@+id/viewNote_button"
+            style="@style/noteLibCardViewButton"
+            android:text="@string/notesLibCardView_button_text" />
+
+        <TextView
+            android:id="@+id/note_id"
+            style="@style/hiddenBlock" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

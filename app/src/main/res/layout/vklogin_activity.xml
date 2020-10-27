@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMapTitleView"
+    tools:context="com.online.dreams_map.Activities.Auth.ActivityVKLogin"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    style="AppTheme3"
+    android:orientation="vertical"
+    app:statusBarScrim="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/toolBarTitle"
+            android:background="@color/colorPrimaryDark"
+            android:fitsSystemWindows="true"
+            app:title="Авторизация ВКонтакте" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/mainLoader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill"
+        android:background="@color/mainLoaderBackground"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:theme="@style/progressBar" />
+
+            <TextView
+                android:id="@+id/mainLoaderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="Пожалуйста подождите"
+                android:textColor="@color/mainLoaderText"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

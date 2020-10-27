@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Online Dreams Map</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login_form">Авторизация</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_loging_form">Авторизация</string>
+    <string name="secret_api_code">098f63cd862ed373c7de4e832fb7bef7</string>
+
+
+
+
+
+    <string name="dreamsLibCardView_title_text">Название сновидения</string>
+    <string name="dreamsLibCardView_subtitle_text">Дата сновидения</string>
+    <string name="dreamsLibCardView_description_text">Короткое описание сновидения\nКороткое описание сновидения\nКороткое описание сновидения\nКороткое описание сновидения\nКороткое описание сновидения</string>
+    <string name="dreamsLibCardView_category_text">Категория сновидения</string>
+    <string name="dreamsLibCardView_mood_text">Настроение сновидения</string>
+    <string name="dreamsLibCardView_button_text">Подробнее</string>
+
+
+    <string name="notesLibCardView_title_text">Название статьи</string>
+    <string name="notesLibCardView_subtitle_text">Дата публикации</string>
+    <string name="notesLibCardView_description_text">Короткое описание статьи\nКороткое описание статьи\nКороткое описание статьи\nКороткое описание статьи\nКороткое описание статьи</string>
+    <string name="notesLibCardView_catalog_text">Рубрика сновидения</string>
+    <string name="notesLibCardView_button_text">Подробнее</string>
+
+
+
+
+
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Инструменты</string>
+    <string name="title_notifications">Уведомления</string>
+    <string name="title_save">Сохранить</string>
+
+    <string name="title_dreams">Дневник</string>
+    <string name="title_messages">Сообщения</string>
+    <string name="title_blog">Статьи</string>
+
+    <string name="title_rotate_left">Влево</string>
+    <string name="title_rotate_right">Вправо</string>
+    <string name="title_zoom_out">Уменьшить</string>
+    <string name="title_zoom_in">Увеличить</string>
+
+    <string name="title_activity_bloglib">Блог сновидящего</string>
+    <string name="title_activity_all_view_dream">Дневники сновидений</string>
+    <string name="title_activity_viewNote">Просмотр статьи</string>
+    <string name="title_activity_dreamslib">Мои сновидения</string>
+    <string name="title_activity_searchDreams">Поиск по сновидениям</string>
+    <string name="title_activity_searchNotes">Поиск по статьям</string>
+    <string name="title_activity_view_dream">Просмотр свидения</string>
+    <string name="title_activity_edit_dream">Новое сновидение</string>
+    <string name="title_activity_view_dream_map">Карта сновидения</string>
+    <string name="title_activity_combobox_ul">Выберите значение</string>
+    <string name="title_activity_testmenu">testmenu</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_groups_dreams">Сновидения</string>
+        <string name="menu_dreams">Мои сновидения</string>
+        <string name="menu_all_dreams">Все дневники</string>
+        <string name="menu_blog">Блог сновидящего</string>
+    <string name="menu_groups_account">Аккаунт</string>
+        <string name="menu_quit">Выход из аккаунта</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="db_name">OnlineDreamsMap_db</string>
+    <string name="db_ver">5</string>
+
+
+    <!-- Настройки ВКонтакте -->
+    <integer name="com_vk_sdk_AppId">7094612</integer>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorAccent"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/left_menu_dreams" >
+
+        <item
+            android:id="@+id/nav_dreams"
+            android:icon="@drawable/ic_dreams_black_24dp"
+            android:title="@string/menu_dreams" />
+        <item
+            android:id="@+id/nav_all_dreams"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="@string/menu_all_dreams" />
+        <item
+            android:id="@+id/nav_blog"
+            android:icon="@drawable/ic_blog_black_24dp"
+            android:title="@string/menu_blog" />
+    </group>
+
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/left_menu_accounts" >
+
+        <item
+            android:id="@+id/nav_quit"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/menu_quit" />
+    </group>
+
+</menu>

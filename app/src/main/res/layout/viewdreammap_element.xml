@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <FrameLayout
+        android:id="@+id/map_3dh_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clipChildren="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/map_3dh_image"
+            android:layout_width="match_parent"
+            android:layout_height="384dp"
+            app:srcCompat="@color/transparent" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/map_back_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:visibility="visible"
+        app:srcCompat="@drawable/map_data_backs_empty" />
+
+    <FrameLayout
+        android:id="@+id/map_border_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:clipChildren="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/map_border_up"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:srcCompat="@color/transparent" />
+
+        <ImageView
+            android:id="@+id/map_border_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:srcCompat="@color/transparent" />
+
+        <ImageView
+            android:id="@+id/map_border_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:srcCompat="@color/transparent" />
+
+        <ImageView
+            android:id="@+id/map_border_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:srcCompat="@color/transparent" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/map_back_object"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        app:srcCompat="@color/transparent" />
+
+</FrameLayout>

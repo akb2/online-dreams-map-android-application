@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTitleMainView"
+    tools:context="com.online.dreams_map.Activities.MyDreams.SearchForm"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    style="AppTheme3"
+    android:orientation="vertical"
+    app:statusBarScrim="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroundMainView">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/toolBarTitle"
+            android:background="@color/colorTitleMainView"
+            android:fitsSystemWindows="true"
+            app:title="Поиск по дневнику" />
+
+        <ScrollView
+            android:id="@+id/verticalScroll"
+            style="@style/formContainer"
+            android:layout_marginTop="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/formGroup"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/formGroupTitle"
+                        android:text="ЧТО ИЩЕМ?" />
+
+                    <EditText
+                        android:id="@+id/searchText"
+                        style="@style/formGroupTextInput"
+                        android:hint="Введите ключевую фразу для поиска"
+                        android:inputType="textCapSentences"
+                        android:capitalize="sentences"
+                        android:maxLength="128"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/formGroup"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/formGroupTitle"
+                        android:text="ДОСТУПНОСТЬ СНОВ" />
+
+                    <LinearLayout
+                        android:id="@+id/searchPublic"
+                        style="@style/formGroupComboBox" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/formGroup"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/formGroupTitle"
+                        android:text="КАТЕГОРИЯ СНОВ" />
+
+                    <LinearLayout
+                        android:id="@+id/searchCategory"
+                        style="@style/formGroupComboBox" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/formGroup"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/formGroupTitle"
+                        android:text="НАСТРОЕНИЕ СНОВ" />
+
+                    <LinearLayout
+                        android:id="@+id/searchMood"
+                        style="@style/formGroupComboBox" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</FrameLayout>

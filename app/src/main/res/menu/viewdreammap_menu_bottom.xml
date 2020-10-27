@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/rotate_left"
+        android:icon="@drawable/ic_rotate_left_24dp"
+        android:title="" />
+
+    <item
+        android:id="@+id/rotate_right"
+        android:icon="@drawable/ic_rotate_right_24dp"
+        android:title="" />
+
+    <item
+        android:id="@+id/zoom_out"
+        android:icon="@drawable/ic_zoom_out_24dp"
+        android:title="" />
+
+    <item
+        android:id="@+id/zoom_in"
+        android:icon="@drawable/ic_zoom_in_24dp"
+        android:title="" />
+
+</menu>

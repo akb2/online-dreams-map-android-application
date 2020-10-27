@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/forDreamLibBlock"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp">
+
+    <LinearLayout
+        android:id="@+id/cardViewlayout"
+        style="@style/baseLinearLayoutVER" >
+
+        <FrameLayout
+            android:id="@+id/image_frame"
+            style="@style/dreamLibCardViewImageFrame" >
+
+            <ImageView
+                android:id="@+id/image"
+                style="@style/dreamLibCardViewImage" />
+
+            <LinearLayout
+                style="@style/dreamLibCardViewImageTextLayout" >
+
+                <TextView
+                    android:id="@+id/image_title"
+                    style="@style/dreamLibCardViewTitleImage"
+                    android:text="@string/dreamsLibCardView_title_text" />
+
+                <TextView
+                    android:id="@+id/image_date"
+                    style="@style/dreamLibCardViewSubTitleImage"
+                    android:text="@string/dreamsLibCardView_subtitle_text" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            style="@style/dreamLibCardViewContentGroup">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/dreamLibCardViewTitle"
+                android:text="@string/dreamsLibCardView_title_text" />
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/dreamLibCardViewSubTitle"
+                android:text="@string/dreamsLibCardView_subtitle_text" />
+
+            <TextView
+                android:id="@+id/content"
+                style="@style/dreamLibCardViewDescription"
+                android:text="@string/dreamsLibCardView_description_text" />
+
+            <org.apmem.tools.layouts.FlowLayout
+                android:id="@+id/keywords"
+                style="@style/dreamLibCardViewKeywordsArea" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/dreamLibCardViewCategoryGroup">
+
+            <LinearLayout
+                style="@style/baseLinearLayoutHOR"
+                android:layout_weight="0.5" >
+
+                <ImageView
+                    android:id="@+id/catalogImage"
+                    style="@style/dreamLibCardViewCategoryImage" />
+
+                <TextView
+                    android:id="@+id/catalogName"
+                    style="@style/dreamLibCardViewCategoryName"
+                    android:text="@string/dreamsLibCardView_category_text"/>
+
+                <TextView
+                    android:id="@+id/catalogID"
+                    style="@style/hiddenBlock" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/baseLinearLayoutHOR"
+                android:layout_weight="0.5" >
+
+                <ImageView
+                    android:id="@+id/moodImage"
+                    style="@style/dreamLibCardViewCategoryImage" />
+
+                <TextView
+                    android:id="@+id/moodName"
+                    style="@style/dreamLibCardViewCategoryName"
+                    android:text="@string/dreamsLibCardView_mood_text" />
+
+                <TextView
+                    android:id="@+id/moodID"
+                    style="@style/hiddenBlock" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/dreamLibCardViewHR"
+            android:orientation="horizontal"></LinearLayout>
+
+        <Button
+            android:id="@+id/viewDream_button"
+            style="@style/dreamLibCardViewButton"
+            android:text="@string/dreamsLibCardView_button_text" />
+
+        <TextView
+            android:id="@+id/dream_id"
+            style="@style/hiddenBlock" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

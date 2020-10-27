@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011950"
+    tools:context="com.online.dreams_map.Activities.StartSlides.FirstSlideShow">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/SlideLayoutContent">
+
+            <ImageView
+                style="@style/SlideIcon"
+                app:srcCompat="@drawable/first_layer_1" />
+
+            <TextView
+                style="@style/Header"
+                android:text="Возьми все под контроль!" />
+
+            <TextView
+                style="@style/Content"
+                android:text="В твоих руках мощный инструмент для достижения ежедневного опыта в осознанных снах." />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/SlideLayoutButton">
+
+            <Button
+                style="@style/MainButtonBack"
+                android:stateListAnimator="@null"
+                android:text="" />
+            <Button
+                android:id="@+id/nextButton"
+                style="@style/MainButton"
+                android:stateListAnimator="@null"
+                android:text="Далее" />
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

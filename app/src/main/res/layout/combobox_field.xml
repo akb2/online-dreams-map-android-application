@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:id="@+id/combobox_field">
+
+    <ImageView
+        android:id="@+id/combobox_image"
+        style="@style/formGroupComboBoxImage"
+        android:layout_weight="0"
+        app:srcCompat="@drawable/first_layer_1" />
+
+    <TextView
+        android:id="@+id/combobox_input"
+        style="@style/formGroupComboBoxInput"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:inputType="textPersonName"
+        android:text="Test Text Test Text Test Text Test Text Test Text" />
+
+    <ImageButton
+        android:id="@+id/combobox_button"
+        style="@style/formGroupComboBoxButton"
+        android:layout_weight="0"
+        app:srcCompat="@drawable/ic_chevron_right_white_24dp" />
+
+    <TextView
+        android:id="@+id/elm_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0" />
+
+
+</LinearLayout>

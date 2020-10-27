@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTitleMainView"
+    tools:context="com.online.dreams_map.Activities.EditDream.EditDreamActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    style="AppTheme3"
+    android:orientation="vertical"
+    app:statusBarScrim="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroundMainView">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/toolBarTitle"
+            android:background="@color/colorTitleMainView"
+            android:fitsSystemWindows="true"
+            app:title="Новый сон" />
+
+        <ScrollView
+            android:id="@+id/verticalScroll"
+            style="@style/formContainer"
+            android:layout_marginTop="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/formGroup"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/formGroupTitle"
+                        android:text="НАЗВАНИЕ СНОВИДЕНИЯ" />
+
+                    <EditText
+                        android:id="@+id/dreamTitle"
+                        style="@style/formGroupTextInput"
+                        android:hint="Введите название сновидения"
+                        android:inputType="textCapSentences"
+                        android:capitalize="sentences"
+                        android:maxLength="64"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/formGroup"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/formGroupTitle"
+                        android:text="КОГДА ПРИСНИЛСЯ СОН" />
+
+                    <TextView
+                        android:id="@+id/dreamDate"
+                        android:onClick="openDateDialog"
+                        style="@style/formGroupTextInput"
+                        android:inputType="date" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/formGroup"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/formGroupTitle"
+                        android:text="КЛЮЧЕВЫЕ СЛОВА ДЛЯ ПОИСКА" />
+
+                    <LinearLayout
+                        android:id="@+id/dreamKeywords"
+                        style="@style/formGroupListBox" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/formGroup"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/formGroupTitle"
+                        android:text="КТО МОЖЕТ ПРОСМАТРИВАТЬ СОН" />
+
+                    <LinearLayout
+                        android:id="@+id/dreamPublic"
+                        style="@style/formGroupComboBox" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/formGroup"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/formGroupTitle"
+                        android:text="КАТЕГОРИЯ СНОВИДЕНИЯ" />
+
+                    <LinearLayout
+                        android:id="@+id/dreamCategory"
+                        style="@style/formGroupComboBox" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/formGroup"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/formGroupTitle"
+                        android:text="НАСТРОЕНИЕ СНОВИДЕНИЯ" />
+
+                    <LinearLayout
+                        android:id="@+id/dreamMood"
+                        style="@style/formGroupComboBox" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/formGroup"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/formGroupTitle"
+                        android:text="ЧТО ВАМ ПРИСНИЛОСЬ" />
+
+                    <EditText
+                        android:id="@+id/dreamContent"
+                        style="@style/formGroupTextInput"
+                        android:hint="Полностью опишите свое сновидение"
+                        android:gravity="start|top"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:capitalize="sentences" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</FrameLayout>

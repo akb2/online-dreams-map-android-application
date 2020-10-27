@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="dreamLibCardViewContentGroup" parent="baseLinearLayoutVER">
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/dreamsLibCardView_padding</item>
+        <item name="android:paddingRight">@dimen/dreamsLibCardView_padding</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">@dimen/dreamsLibCardView_padding</item>
+    </style>
+
+    <style name="dreamLibCardViewCategoryGroup" parent="baseLinearLayoutHOR">
+        <item name="android:layout_marginTop">@dimen/dreamsLibCardView_innerMarginBig</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">@dimen/dreamsLibCardView_padding</item>
+        <item name="android:paddingBottom">@dimen/dreamsLibCardView_padding</item>
+        <item name="android:paddingLeft">@dimen/dreamsLibCardView_padding</item>
+    </style>
+
+
+
+
+
+    <style name="dreamLibCardViewImageFrame" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dreamsLibCardView_imageHeight</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="dreamLibCardViewImageTextLayout" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">left|bottom</item>
+        <item name="android:padding">@dimen/dreamsLibCardView_padding</item>
+        <item name="android:background">@color/dreamsLibCardView_imageTextBackground</item>
+    </style>
+
+    <style name="dreamLibCardViewImage" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dreamsLibCardView_imageHeight</item>
+        <item name="android:layout_gravity">center_horizontal|top</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:background">@color/dreamsLibCardView_imageBackground</item>
+    </style>
+
+
+
+
+
+    <style name="dreamLibCardViewTitle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dreamsLibCardView_title_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/dreamsLibCardView_titleColor</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="dreamLibCardViewTitleImage" parent="dreamLibCardViewTitle">
+        <item name="android:textColor">@color/dreamsLibCardView_titleColorImage</item>
+    </style>
+
+    <style name="dreamLibCardViewSubTitle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dreamsLibCardView_subtitle_size</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/dreamsLibCardView_subTitleColor</item>
+        <item name="android:layout_marginBottom">@dimen/dreamsLibCardView_innerMarginBig</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="dreamLibCardViewSubTitleImage" parent="dreamLibCardViewSubTitle">
+        <item name="android:textColor">@color/dreamsLibCardView_subTitleColorImage</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="dreamLibCardViewDescription" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dreamsLibCardView_description_size</item>
+        <item name="android:textColor">@color/dreamsLibCardView_description</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="dreamLibCardViewKeywordsArea" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/dreamsLibCardView_innerMargin</item>
+    </style>
+
+
+
+
+
+    <style name="dreamLibCardViewCategoryImage" parent="AppTheme">
+        <item name="android:layout_width">@dimen/dreamsLibCardView_category_image_size</item>
+        <item name="android:layout_height">@dimen/dreamsLibCardView_category_image_size</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@color/dreamsLibCardView_categoryBackground</item>
+    </style>
+
+    <style name="dreamLibCardViewCategoryName" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dreamsLibCardView_category_name_size</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/dreamsLibCardView_categoryNameColor</item>
+        <item name="android:layout_marginLeft">@dimen/dreamsLibCardView_category_margin</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+
+
+
+
+    <style name="dreamLibCardViewHR" parent="baseLinearLayoutHOR">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:background">@color/dreamsLibCardViewHR</item>
+    </style>
+
+    <style name="dreamLibCardViewButton" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/dreamslib_cardview_button</item>
+        <item name="android:background">@drawable/dreamslib_cardview_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+
+</resources>

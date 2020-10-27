@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorMapTitleView">#111111</color>
+    <color name="colorMapContentView">#000000</color>
+    <color name="colorBackgroundMainView">#FFFFFF</color>
+    <color name="colorTitleMainView">#011950</color>
+    <color name="colorSplashBackground">#000000</color>
+
+
+
+    <color name="colorPrimary">#011950</color>
+    <color name="colorPrimaryDark">#011950</color>
+    <color name="colorAccent">#011950</color>
+    <color name="colorDefaultText">#000000</color>
+    <color name="colorDefaultTextDark">#EEEEEE</color>
+
+    <color name="navBarDividerColor">#000000</color>
+    <color name="navBarTitleColor">#888888</color>
+
+
+
+    <color name="toolbarColor">#fff</color>
+    <color name="toolbarSubColor">#ddd</color>
+
+
+
+
+
+    <color name="dreamsLibCardView_background">#fff</color>
+    <color name="dreamsLibCardView_mainColor">#000</color>
+
+    <color name="dreamsLibCardView_titleColor">#000</color>
+    <color name="dreamsLibCardView_titleColorImage">#fff</color>
+    <color name="dreamsLibCardView_subTitleColor">#000</color>
+    <color name="dreamsLibCardView_subTitleColorImage">#eee</color>
+    <color name="dreamsLibCardView_description">#000</color>
+    <color name="dreamsLibCardView_keywordColor">#011950</color>
+
+    <color name="dreamsLibCardView_imageBackground">#999999</color>
+    <color name="dreamsLibCardView_imageTextBackground">#77000000</color>
+
+    <color name="dreamsLibCardView_categoryNameColor">#000</color>
+    <color name="dreamsLibCardView_categoryBackground">#999</color>
+
+    <color name="dreamsLibCardViewHR">#000</color>
+
+    <color name="dreamsLibCardView_button_background">#fff</color>
+    <color name="dreamsLibCardView_button_color">#000</color>
+    <color name="dreamsLibCardView_buttonPressed_background">#011950</color>
+    <color name="dreamsLibCardView_buttonPressed_color">#eee</color>
+
+
+
+
+
+    <color name="notesLibCardView_background">#fff</color>
+    <color name="notesLibCardView_mainColor">#000</color>
+
+    <color name="notesLibCardView_titleColor">#000</color>
+    <color name="notesLibCardView_titleColorImage">#fff</color>
+    <color name="notesLibCardView_subTitleColor">#000</color>
+    <color name="notesLibCardView_subTitleColorImage">#eee</color>
+    <color name="notesLibCardView_description">#000</color>
+    <color name="notesLibCardView_keywordColor">#011950</color>
+
+    <color name="notesLibCardView_imageBackground">#999</color>
+    <color name="notesLibCardView_imageTextBackground">#77000000</color>
+
+    <color name="notesLibCardViewHR">#000</color>
+
+    <color name="notesLibCardView_button_background">#fff</color>
+    <color name="notesLibCardView_button_color">#000</color>
+    <color name="notesLibCardView_buttonPressed_background">#011950</color>
+    <color name="notesLibCardView_buttonPressed_color">#eee</color>
+
+
+
+
+
+    <color name="textColorMain">#000000</color>
+    <color name="textColorMainHint">#444444</color>
+    <color name="textColorTitle">#011950</color>
+    <color name="textColorSubTitle">#333333</color>
+    <color name="textBackgroundMain">#EEEEEE</color>
+    <color name="textColorMainHighLight">#FFFFFF</color>
+    <color name="textBackgroundMainHighLight">#9BADD8</color>
+    <color name="textBackgroundListBoxElm">#FFFFFF</color>
+    <color name="textColorCaret">#011950</color>
+
+    <color name="contentButtonMain_Background">#011950</color>
+    <color name="contentButtonHover_Background">#192F63</color>
+
+    <color name="primaryColorDark">#011950</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+
+    <color name="noticeColorError">#BB1111</color>
+    <color name="noticeColorSuccess">#011950</color>
+
+    <color name="black_overlay">#FFFFFF</color>
+
+    <color name="main_menu_color">#000000</color>
+    <color name="main_menu_select_color">#FFFFFF</color>
+    <color name="main_menu_background">#00FFFFFF</color>
+    <color name="main_menu_select_background">#011950</color>
+
+    <color name="cardViewContainer">#DDDDDD</color>
+    <color name="cardViewBackground">#FFFFFF</color>
+    <color name="CardViewMainColor">#000000</color>
+    <color name="CardViewSubColor">#333333</color>
+
+
+    <color name="keywordsBackground">#011950</color>
+    <color name="keywordsColor">#FFFFFF</color>
+
+
+    <color name="libLoader">#333</color>
+
+
+    <color name="mainLoaderBackground">#DD000000</color>
+    <color name="mainLoaderText">#FFFFFF</color>
+    <color name="mainLoaderProgress">#FFFFFF</color>
+
+    <color name="transparent">#00FFFFFF</color>
+</resources>
